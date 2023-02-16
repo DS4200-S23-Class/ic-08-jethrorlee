@@ -13,7 +13,7 @@ var svg = d3.select("#bar_chart")
           "translate(" + margin.left + "," + margin.top + ")");
 
 // Parse the Data
-d3.csv("data/data.csv").then((data) => {
+d3.csv("data/data.csv").then((data) => {;
 
 // X axis
 var x = d3.scaleBand()
@@ -49,4 +49,4 @@ svg.selectAll("mybar")
     .attr("height", function(d) { return height - y(d.Value); })
     .attr("fill", "indigo")
 
-})
+});
